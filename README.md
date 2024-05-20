@@ -1,5 +1,4 @@
-# Whisperwave
-
+# Worklock
 Wor-k-lock is an online space booking site that allows users to book spaces in the nearest cafes. Built with the MERN stack (MongoDB, Express.js, React.js, Node.js), it provides a seamless experience for finding and reserving spots in cafes. Cloudinary is used for managing and storing images. Additionally, Wor-k-lock includes an admin panel to manage all bookings and cafes.
 
 ## Features
