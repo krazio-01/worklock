@@ -1,0 +1,109 @@
+.testimonial {
+    margin: 5rem;
+}
+
+.testimonial .testimonials-header {
+    margin-bottom: 2rem;
+}
+
+.testimonial .testimonials-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 3rem;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    height: 350px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 1rem;
+    perspective: 1000px;
+    border: 2px solid var(--light-brown);
+    transition: scale 0.3s;
+}
+
+.testimonial-card:hover {
+    scale: 1.05;
+}
+
+.testimonial-card .card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-brown);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+}
+
+.testimonial-card .card-front {
+    text-align: center;
+}
+
+.testimonial-card .card-content .card-front,
+.testimonial-card .card-content .card-back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.testimonial-card .card-back {
+    padding: .5rem;
+    transform: rotateY(180deg);
+}
+
+.card-content .tt-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1.5rem 0;
+}
+
+.card-content .tt-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-content .testimonial-name {
+    font-size: 1.3rem;
+}
+
+.testimonial-card .testimonial-text {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 376px) {
+    .testimonial {
+        margin: 3rem 2rem;
+    }
+
+    .testimonial .testimonials-header h1 {
+        font-size: var(--large-font);
+    }
+
+    .testimonials-container {
+        flex-direction: column;
+        gap: 2rem !important;
+    }
+
+    .testimonial-card {
+        width: 260px;
+        height: 330px;
+    }
+    
+    .card-content .testimonial-name {
+        font-size: var(--medium-font);
+    }
+    
+}

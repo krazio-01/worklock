@@ -1,0 +1,55 @@
+.food-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 4.5rem);
+    background-color: var(--light-brown);
+}
+
+.food-items {
+    padding: 0 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.food-items img {
+    user-select: none;
+    margin: 0 64px;
+    width: calc(100% / 4);
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.food-container #left-arrow,
+.food-container #right-arrow {
+    font-size: 2rem;
+    color: var(--brown);
+    transition: color 0.2s ease;
+}
+
+.food-container #left-arrow:hover,
+.food-container #right-arrow:hover {
+    color: var(--dark-brown);
+}
+
+.food-container #left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    cursor: pointer;
+}
+
+.food-container #right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 376px) {
+    .food-items img {
+        width: calc(100% / 1.5);
+    }
+}

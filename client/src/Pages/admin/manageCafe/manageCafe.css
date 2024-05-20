@@ -1,0 +1,168 @@
+.cafe-manager-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+    overflow: hidden;
+}
+
+.cafe-manager-form {
+    max-width: 500PX;
+    border: 2px solid var(--light-brown);
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.cafe-add-form-top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.cafe-manager-form form div label {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--light-brown);
+    border-radius: 12px;
+}
+
+.cafe-manager-form form div input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid var(--light-brown);
+    border-radius: 12px;
+    outline: none;
+    transition: border 0.2s ease-in-out;
+}
+
+.cafe-manager-form form div input:hover {
+    border: 1px solid var(--brown);
+}
+
+.cafe-manager-form form button {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background: var(--brown);
+    border: 1px solid var(--light-brown);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.cafe-manager-form form .cafe-submit-loading {
+    opacity: 0.7;
+}
+
+.cafes-container {
+    margin-left: 1rem;
+    max-height: 600px;
+    min-height: 600px;
+    max-width: 750px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.cafe-loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+}
+
+.admin-cafe-tile {
+    display: flex;
+    gap: 1rem;
+    padding: .7rem;
+    border-radius: 12px;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.admin-cafe-tile:hover {
+    background-color: var(--hover-dark);
+}
+
+.cafe-tile-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.admin-cafe-img {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.admin-cafe-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cafe-tile-info #tile-above {
+    max-width: 80%;
+}
+
+.cafe-tile-info #tile-above p {
+    font-size: var(--small-font);
+    line-height: 1.1rem;
+    /* max-width: 80%; */
+    color: var(--text-color);
+    overflow: hidden; 
+    /* white-space: nowrap;
+    text-overflow: ellipsis; */
+}
+
+.cafe-tile-info #tile-bottom {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: var(--small-font);
+}
+
+.cafe-tile-info #tile-bottom div button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    color: red;
+    padding: .5rem;
+    border-radius: 12px;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.cafe-tile-info #tile-bottom div button span:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.cafe-tile-info #tile-bottom button{
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+}
+
+.cafe-tile-info #tile-bottom .cafe-removing-loading span{
+    opacity: 0.5;
+}
+
+.cafe-tile-info #tile-bottom svg{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cafe-tile-info #tile-bottom p {
+    margin-top: .5rem;
+}
+
+#tile-bottom div:first-child span{
+    color: #fff;
+    border-radius: 5px;
+    padding: .2rem .3rem;
+    background-color: #48ac27;
+}

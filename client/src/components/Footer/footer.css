@@ -1,0 +1,142 @@
+.footer {
+    margin: 0 5rem;
+}
+
+.footer #line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--light-brown);
+    margin: 1rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.foo-info {
+    padding: 1rem;
+    max-width: 400px;
+}
+
+.foo-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.foo-info span {
+    font-size: var(--medium-font);
+}
+
+.foo-info .social-links {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+}
+
+.foo-info .social-links svg{
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.foo-info .social-links svg:hover{
+    scale: 1.2;
+}
+
+.foo-links {
+    display: flex;
+    gap: 5rem;
+}
+
+.foo-links div {
+    font-size: 16px;
+}
+
+.foo-links div span {
+    font-weight: bold;
+}
+
+.foo-links div ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.foo-links div ul li{
+    margin-bottom: .5rem;
+}
+
+.foo-links div ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        margin: 0 1rem;
+    }
+
+    .foo-info h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .foo-info span {
+        font-size: var(--medium-font);
+    }
+    
+    .foo-info .social-links {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .foo-links {
+        display: flex;
+        gap: 4rem;
+    }
+    
+    .foo-links div {
+        font-size: 16px;
+    }
+    
+    .foo-links div ul li{
+        margin-bottom: .5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .footer {
+        margin: 0 1rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .foo-info {
+        margin-bottom: 1rem;
+    }
+
+    .foo-info h2 {
+        font-size: var(--large-font);
+        margin-bottom: 1rem;
+    }
+    
+    .foo-info span {
+        font-size: var(--medium-font);
+    }    
+
+    .foo-links {
+        margin: 0 3rem;
+        gap: 1rem;
+    }
+}
